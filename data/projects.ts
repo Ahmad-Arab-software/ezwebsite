@@ -75,7 +75,7 @@ export const projects: Project[] = [
     id: 4,
     title: "King Airco",
     category: "Webdesign",
-    image: "/ezwebsite/images/king-room-1.png",
+    image: "/images/king-room-1.png",
     description: "Professionele website voor een gespecialiseerd airconditioning installatiebedrijf.",
     year: "2024",
     tags: ["Webdesign", "UI/UX", "SEO", "Responsive"],
@@ -86,11 +86,11 @@ export const projects: Project[] = [
       "Snelle laadtijden en mobielvriendelijk ontwerp"
     ],
     url: "https://kingairconditioning.nl/",
-    mockupImage: "/ezwebsite/images/mockups/kingairco-mockup.png",
+    mockupImage: "/images/mockups/kingairco-mockup.png",
     images: [
-      "/ezwebsite/images/king-room-1.png",
-      "/ezwebsite/images/king-buitenunit.webp",
-      "/ezwebsite/images/king-installatie-1.webp",
+      "/images/king-room-1.png",
+      "/images/king-buitenunit.webp",
+      "/images/king-installatie-1.webp",
     ]
   },
   {
@@ -112,28 +112,6 @@ export const projects: Project[] = [
     images: [
       "/images/yume-ramen/preview.png",
       "/images/yume-ramen/desktop.png",
-    ]
-  },
-  {
-    id: 5,
-    title: "King Airco",
-    category: "Webdesign",
-    image: "/ezwebsite/images/king-room-1.png",
-    description: "Professionele website voor een gespecialiseerd airconditioning installatiebedrijf.",
-    year: "2024",
-    tags: ["Webdesign", "WordPress", "SEO", "Branding"],
-    longDescription: "King Airconditioning is een gespecialiseerd bedrijf in de installatie en het onderhoud van airconditioningsystemen. Wij ontwierpen een heldere, professionele website die hun diensten, merken en werkgebied overzichtelijk presenteert aan particulieren en zakelijke klanten.",
-    highlights: [
-      "Overzichtelijke dienstenpagina's per type installatie",
-      "SEO-geoptimaliseerd voor lokale zoekopdrachten",
-      "Snelle laadtijden en mobielvriendelijk ontwerp"
-    ],
-    url: "https://kingairconditioning.nl/",
-    mockupImage: "/ezwebsite/images/mockups/kingairco-mockup.png",
-    images: [
-      "/ezwebsite/images/king-room-1.png",
-      "/ezwebsite/images/king-buitenunit.webp",
-      "/ezwebsite/images/king-installatie-1.webp",
     ]
   },
   {

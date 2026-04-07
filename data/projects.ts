@@ -16,7 +16,7 @@ export const projects: Project[] = [
       "Mobielvriendelijk ontwerp afgestemd op het gele merkidentiteit van YTech"
     ],
     url: "https://ytech.nl",
-    mockupImage: "/ezwebsite/images/mockups/ytech-mockup.png",
+    mockupImage: "/images/mockups/ytech-mockup.png",
     images: [
       "https://images.unsplash.com/photo-1621905251189-08b45d6a269e?q=80&w=2069&auto=format&fit=crop",
       "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?q=80&w=2070&auto=format&fit=crop",
@@ -28,7 +28,7 @@ export const projects: Project[] = [
     id: 2,
     title: "AhmadFlex",
     category: "Web App",
-    image: "/ezwebsite/images/ahmadflex/preview.png",
+    image: "/images/ahmadflex/preview.png",
     description: "Streaming-geïnspireerd platform voor films en series.",
     year: "2025",
     tags: ["React", "API Integration", "Responsive", "UI/UX"],
@@ -39,17 +39,17 @@ export const projects: Project[] = [
       "Responsive design voor desktop, tablet en mobiel"
     ],
     url: "https://ahmadflex-20260307.netlify.app/",
-    mockupImage: "/ezwebsite/images/mockups/ahmadflex-mockup.png",
+    mockupImage: "/images/mockups/ahmadflex-mockup.png",
     images: [
-      "/ezwebsite/images/ahmadflex/preview.png",
-      "/ezwebsite/images/ahmadflex/desktop.png",
+      "/images/ahmadflex/preview.png",
+      "/images/ahmadflex/desktop.png",
     ]
   },
   {
     id: 3,
     title: "Piccobello",
     category: "Webdesign",
-    image: "/ezwebsite/images/piccobello/truck-exterior.jpg",
+    image: "/images/piccobello/truck-exterior.jpg",
     description: "Smaakvolle website voor een authentiek snacks- en cateringbedrijf.",
     year: "2024",
     tags: ["Webdesign", "WordPress", "SEO", "E-commerce"],
@@ -62,20 +62,20 @@ export const projects: Project[] = [
     url: "https://piccobellosnacks.nl/",
     canEmbed: false,
     screenshot: "https://www.mkerrie.com/assets/images/piccobello-full.webp",
-    mockupImage: "/ezwebsite/images/mockups/piccobello-mockup.png",
+    mockupImage: "/images/mockups/piccobello-mockup.png",
     images: [
-      "/ezwebsite/images/piccobello/truck-exterior.jpg",
-      "/ezwebsite/images/piccobello/foodtruck-snacks.jpg",
-      "/ezwebsite/images/piccobello/truck-sfeer.jpg",
-      "/ezwebsite/images/piccobello/truck-balie.jpg",
-      "/ezwebsite/images/piccobello/rotterdam-skyline.jpg",
+      "/images/piccobello/truck-exterior.jpg",
+      "/images/piccobello/foodtruck-snacks.jpg",
+      "/images/piccobello/truck-sfeer.jpg",
+      "/images/piccobello/truck-balie.jpg",
+      "/images/piccobello/rotterdam-skyline.jpg",
     ]
   },
   {
     id: 4,
     title: "Yume Ramen",
     category: "Web App",
-    image: "/ezwebsite/images/yume-ramen/preview.png",
+    image: "/images/yume-ramen/preview.png",
     description: "Japanse ramen delivery-app met een unieke visuele stijl.",
     year: "2025",
     tags: ["React", "Firebase", "Vite", "Full-Stack"],
@@ -86,17 +86,17 @@ export const projects: Project[] = [
       "Sfeervol Japans design met illustraties en animaties"
     ],
     url: "https://yume-ramen.netlify.app/login",
-    mockupImage: "/ezwebsite/images/mockups/yume-mockup.png",
+    mockupImage: "/images/mockups/yume-mockup.png",
     images: [
-      "/ezwebsite/images/yume-ramen/preview.png",
-      "/ezwebsite/images/yume-ramen/desktop.png",
+      "/images/yume-ramen/preview.png",
+      "/images/yume-ramen/desktop.png",
     ]
   },
   {
     id: 5,
     title: "King Airco",
     category: "Webdesign",
-    image: "/ezwebsite/images/king-room-1.png",
+    image: "/images/king-room-1.png",
     description: "Professionele website voor een gespecialiseerd airconditioning installatiebedrijf.",
     year: "2024",
     tags: ["Webdesign", "WordPress", "SEO", "Branding"],
@@ -107,18 +107,18 @@ export const projects: Project[] = [
       "Snelle laadtijden en mobielvriendelijk ontwerp"
     ],
     url: "https://kingairconditioning.nl/",
-    mockupImage: "/ezwebsite/images/mockups/kingairco-mockup.png",
+    mockupImage: "/images/mockups/kingairco-mockup.png",
     images: [
-      "/ezwebsite/images/king-room-1.png",
-      "/ezwebsite/images/king-buitenunit.webp",
-      "/ezwebsite/images/king-installatie-1.webp",
+      "/images/king-room-1.png",
+      "/images/king-buitenunit.webp",
+      "/images/king-installatie-1.webp",
     ]
   },
   {
     id: 6,
     title: "Split Workout",
     category: "Web App",
-    image: "/ezwebsite/images/split-workout/preview.png",
+    image: "/images/split-workout/preview.png",
     description: "Workout tracker app voor trainingen en programma's.",
     year: "2025",
     tags: ["React", "Firebase", "Mobile-First", "PWA"],
@@ -129,10 +129,10 @@ export const projects: Project[] = [
       "Performance dashboard met streak- en volumetracking"
     ],
     url: "https://split-workout-app.netlify.app/",
-    mockupImage: "/ezwebsite/images/mockups/split-mockup.png",
+    mockupImage: "/images/mockups/split-mockup.png",
     images: [
-      "/ezwebsite/images/split-workout/preview.png",
-      "/ezwebsite/images/split-workout/desktop.png",
+      "/images/split-workout/preview.png",
+      "/images/split-workout/desktop.png",
     ]
   }
 ];

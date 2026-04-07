@@ -35,7 +35,7 @@ const Navbar: React.FC = () => {
       return;
     }
 
-    const isHome = location.pathname === '/' || location.pathname === '/ezwebsite/' || location.pathname === '/ezwebsite';
+    const isHome = location.pathname === '/';
 
     if (href === '#') {
       if (isHome) {

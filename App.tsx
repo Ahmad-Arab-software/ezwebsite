@@ -51,7 +51,7 @@ const HomePage: React.FC = () => (
 
 const App: React.FC = () => {
   return (
-    <BrowserRouter basename="/ezwebsite">
+    <BrowserRouter>
       <ScrollToTopOnNavigate />
       <Routes>
         <Route path="/" element={<HomePage />} />

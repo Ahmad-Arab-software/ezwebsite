@@ -37,12 +37,12 @@ export const translations = {
   about: {
     label: { nl: 'Over Ons', en: 'About Us' },
     headline1: { nl: 'Geen bureau.', en: 'No agency.' },
-    headline2: { nl: 'Gewoon drie vrienden.', en: 'Just three friends.' },
+    headline2: { nl: 'Gewoon twee vrienden.', en: 'Just two friends.' },
     tagline: { nl: 'Vrienden sinds dag één. Nu bouwen we samen websites.', en: 'Friends since day one. Now we build websites together.' },
     storyTitle: { nl: 'Ons verhaal', en: 'Our story' },
     story1: {
-      nl: 'Drie studenten uit dezelfde klas met één gedeelde obsessie: het internet. Terwijl anderen huiswerk maken, bouwen wij websites.',
-      en: 'Three students from the same class with one shared obsession: the internet. While others do homework, we build websites.',
+      nl: 'Twee studenten uit dezelfde klas met één gedeelde obsessie: het internet. Terwijl anderen huiswerk maken, bouwen wij websites.',
+      en: 'Two students from the same class with one shared obsession: the internet. While others do homework, we build websites.',
     },
     story2: {
       nl: 'Het begon met kleine projectjes voor vrienden en familie. "Kun je even een site maken?" werd al snel "Jullie zijn echt goed hierin." Toen wisten we: dit is wat we willen doen.',
@@ -70,10 +70,10 @@ export const translations = {
       nl: 'We doen dit niet voor het geld. We doen dit omdat we het vet vinden. En dat zie je terug in elk pixel.',
       en: 'We don\'t do this for the money. We do this because we love it. And you can see that in every pixel.',
     },
-    seoTitle: { nl: 'Over Ons | ezwebsite - Drie Vrienden, Één Missie', en: 'About Us | ezwebsite - Three Friends, One Mission' },
+    seoTitle: { nl: 'Over Ons | ezwebsite - Twee Vrienden, Één Missie', en: 'About Us | ezwebsite - Two Friends, One Mission' },
     seoDesc: {
-      nl: 'Ahmad, Kerim en Nawdar. Drie vrienden die samen websites bouwen waar je blij van wordt.',
-      en: 'Ahmad, Kerim and Nawdar. Three friends building websites that make you happy.',
+      nl: 'Twee vrienden die samen websites bouwen waar je blij van wordt.',
+      en: 'Two friends building websites that make you happy.',
     },
   },
 
@@ -113,7 +113,7 @@ export const translations = {
         },
       },
     ],
-    seoTitle: { nl: 'Diensten | Web Design, Branding & Support', en: 'Services | Web Design, Branding & Support' },
+    seoTitle: { nl: 'Diensten | Web Design, Development & Support', en: 'Services | Web Design, Development & Support' },
     seoDesc: {
       nl: 'Ontdek hoe ezwebsite jouw online aanwezigheid kan moderniseren met website revamps, support en high-end design.',
       en: 'Discover how ezwebsite can modernize your online presence with website revamps, support and high-end design.',
@@ -165,8 +165,8 @@ export const translations = {
     viewAll: { nl: 'Bekijk Alle Projecten', en: 'View All Projects' },
     seoTitle: { nl: 'Projecten | Geselecteerde Werken', en: 'Projects | Selected Works' },
     seoDesc: {
-      nl: 'Onze meest recente meesterwerken in webdesign en branding.',
-      en: 'Our most recent masterpieces in web design and branding.',
+      nl: 'Onze meest recente meesterwerken in webdesign en development.',
+      en: 'Our most recent masterpieces in web design and development.',
     },
   },
 
@@ -261,7 +261,7 @@ export const translations = {
     nextProject: { nl: 'Volgend project', en: 'Next project' },
   },
 
-  // Project data — order must match data/projects.ts: YTech, AhmadFlex, Piccobello, Yume Ramen, King Airco, Split Workout
+  // Project data — order must match data/projects.ts: YTech, AhmadFlex, Piccobello, King Airco, Yume Ramen, Split Workout
   projectData: [
     {
       description: {
@@ -331,28 +331,6 @@ export const translations = {
     },
     {
       description: {
-        nl: 'Japanse ramen delivery-app met een unieke visuele stijl.',
-        en: 'Japanese ramen delivery app with a unique visual style.',
-      },
-      longDescription: {
-        nl: 'Yume Ramen is een moderne delivery experience voor een ramenconcept, gebouwd met React en Firebase. De flow voelt direct en app-achtig aan: inloggen als klant, gerechten ontdekken, toppings kiezen, afrekenen en de bestelling live volgen via Firestore-statusupdates. De visuele stijl en interacties zijn bewust sfeervol en duidelijk gehouden, zodat de landing, product customizer, cart en orderstatus samen één rustige maar karaktervolle ervaring vormen.',
-        en: 'Yume Ramen is a modern delivery experience for a ramen concept, built with React and Firebase. The flow feels direct and app-like: log in as a customer, discover dishes, choose toppings, checkout and track your order live via Firestore status updates. The visual style and interactions are deliberately atmospheric and clear, so that the landing, product customizer, cart and order status together form one calm yet characterful experience.',
-      },
-      highlights: {
-        nl: [
-          'Realtime orderstatus via Firestore-statusupdates',
-          'Rollen-systeem: klant, chef, bezorger en admin',
-          'Sfeervol Japans design met illustraties en animaties',
-        ],
-        en: [
-          'Real-time order status via Firestore updates',
-          'Role system: customer, chef, delivery and admin',
-          'Atmospheric Japanese design with illustrations and animations',
-        ],
-      },
-    },
-    {
-      description: {
         nl: 'Professionele website voor een gespecialiseerd airconditioning installatiebedrijf.',
         en: 'Professional website for a specialized air conditioning installation company.',
       },
@@ -370,6 +348,28 @@ export const translations = {
           'Clear service pages per installation type',
           'SEO-optimized for local search queries',
           'Fast loading times and mobile-friendly design',
+        ],
+      },
+    },
+    {
+      description: {
+        nl: 'Japanse ramen delivery-app met een unieke visuele stijl.',
+        en: 'Japanese ramen delivery app with a unique visual style.',
+      },
+      longDescription: {
+        nl: 'Yume Ramen is een moderne delivery experience voor een ramenconcept, gebouwd met React en Firebase. De flow voelt direct en app-achtig aan: inloggen als klant, gerechten ontdekken, toppings kiezen, afrekenen en de bestelling live volgen via Firestore-statusupdates. De visuele stijl en interacties zijn bewust sfeervol en duidelijk gehouden, zodat de landing, product customizer, cart en orderstatus samen één rustige maar karaktervolle ervaring vormen.',
+        en: 'Yume Ramen is a modern delivery experience for a ramen concept, built with React and Firebase. The flow feels direct and app-like: log in as a customer, discover dishes, choose toppings, checkout and track your order live via Firestore status updates. The visual style and interactions are deliberately atmospheric and clear, so that the landing, product customizer, cart and order status together form one calm yet characterful experience.',
+      },
+      highlights: {
+        nl: [
+          'Realtime orderstatus via Firestore-statusupdates',
+          'Rollen-systeem: klant, chef, bezorger en admin',
+          'Sfeervol Japans design met illustraties en animaties',
+        ],
+        en: [
+          'Real-time order status via Firestore updates',
+          'Role system: customer, chef, delivery and admin',
+          'Atmospheric Japanese design with illustrations and animations',
         ],
       },
     },

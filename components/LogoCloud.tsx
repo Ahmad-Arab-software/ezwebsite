@@ -7,11 +7,11 @@ const LogoCloud: React.FC = () => {
   const { lang, t } = useLanguage();
 
   return (
-    <section className="py-16 md:py-20 bg-slate-50 border-y border-slate-100 overflow-hidden">
+    <section className="pt-6 md:pt-8 pb-16 md:pb-20 bg-slate-50 border-y border-slate-100 overflow-hidden">
       {/* Skills marquee */}
       <div className="overflow-hidden">
         <Marquee
-          items={["Web Design", "Branding", "UI/UX", "WordPress", "React", "SEO", "E-commerce", "Mobile First", "Hosting", "Support"]}
+          items={["Web Design", "UI/UX", "React", "Next.js", "SEO", "Mobile First", "Hosting", "Support", "Full-Stack", "Firebase"]}
           speed={35}
           separator="✦"
           className="text-2xl md:text-4xl font-display font-bold uppercase tracking-tight text-slate-200"

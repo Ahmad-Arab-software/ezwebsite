@@ -39,21 +39,14 @@ const About: React.FC = () => {
             viewport={{ once: true }}
             className="md:col-span-8 relative rounded-3xl overflow-hidden group"
           >
-            <div className="aspect-[4/3] md:aspect-[16/10]">
+            <div className="relative aspect-[4/3] md:aspect-auto md:h-full min-h-[300px]">
               <img
                 src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?q=80&w=2070&auto=format&fit=crop"
                 alt="ezwebsite team working"
-                className="w-full h-full object-cover group-hover:scale-105 transition-all duration-700"
+                className="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-all duration-700"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent" />
               <div className="absolute bottom-6 left-6 md:bottom-10 md:left-10 right-6 md:right-10">
-                <div className="flex items-center gap-3 mb-4">
-                  {["Ahmad", "Kerim", "Nawdar"].map((name) => (
-                    <div key={name} className="px-4 py-2 rounded-full bg-white/10 backdrop-blur-xl border border-white/20">
-                      <span className="text-white text-xs md:text-sm font-bold">{name}</span>
-                    </div>
-                  ))}
-                </div>
                 <p className="text-white/60 text-sm md:text-base max-w-md">
                   {t.about.tagline[lang]}
                 </p>

@@ -1,8 +1,7 @@
-import React, { useRef, useState, useCallback } from 'react';
+import React, { useState, useCallback } from 'react';
 import { Link } from 'react-router-dom';
 import { motion, useScroll, useTransform, useSpring } from 'framer-motion';
 import { ArrowUpRight, ArrowRight, Plus, Globe } from 'lucide-react';
-import { useSEO } from '../hooks/useSEO';
 import { projects } from '../data/projects';
 import { useLanguage } from '../i18n/LanguageContext';
 
@@ -88,6 +87,9 @@ const ProjectCardMobile: React.FC<{ project: (typeof projects)[0] }> = ({ projec
 
   const projectIndex = project.id - 1;
   const description = t.projectData[projectIndex]?.description[lang] ?? project.description;
+  const contextLabel = project.contextType === 'client'
+    ? t.projectDetail.clientProject[lang]
+    : t.projectDetail.inHouseConcept[lang];
 
   return (
     <Link to={`/project/${toSlug(project.title)}`} className="block">
@@ -110,6 +112,9 @@ const ProjectCardMobile: React.FC<{ project: (typeof projects)[0] }> = ({ projec
             <div className="flex items-center gap-2 mb-2">
               <span className="px-2 py-0.5 rounded-full bg-violet-500/10 border border-violet-500/15 text-[9px] font-bold uppercase tracking-[0.2em] text-violet-400">
                 {project.category}
+              </span>
+              <span className="px-2 py-0.5 rounded-full bg-white/[0.03] border border-white/[0.05] text-[9px] font-bold uppercase tracking-[0.2em] text-white/45">
+                {contextLabel}
               </span>
               <span className="text-white/15 text-[10px] font-bold">{project.year}</span>
             </div>
@@ -140,6 +145,9 @@ const ProjectCard: React.FC<{
   const { lang, t } = useLanguage();
   const projectIndex = project.id - 1;
   const description = t.projectData[projectIndex]?.description[lang] ?? project.description;
+  const contextLabel = project.contextType === 'client'
+    ? t.projectDetail.clientProject[lang]
+    : t.projectDetail.inHouseConcept[lang];
   const cardRef = useRef<HTMLDivElement>(null);
   const [mousePos, setMousePos] = useState({ x: 0.5, y: 0.5 });
   const [isHovered, setIsHovered] = useState(false);
@@ -206,6 +214,9 @@ const ProjectCard: React.FC<{
                   <span className="px-2.5 py-0.5 rounded-full bg-violet-500/10 border border-violet-500/15 text-[9px] font-bold uppercase tracking-[0.2em] text-violet-400">
                     {project.category}
                   </span>
+                  <span className="px-2.5 py-0.5 rounded-full bg-white/[0.03] border border-white/[0.05] text-[9px] font-bold uppercase tracking-[0.2em] text-white/45">
+                    {contextLabel}
+                  </span>
                   <span className="text-white/15 text-xs font-bold">{project.year}</span>
                 </div>
                 <h3 className={`font-display font-bold uppercase tracking-tight transition-colors duration-300 ${
@@ -254,15 +265,12 @@ interface ProjectsProps {
 }
 
 const Projects: React.FC<ProjectsProps> = ({ showAll = false }) => {
-  const ref = useRef<HTMLElement>(null);
   const { lang, t } = useLanguage();
-
-  useSEO(ref, t.projects.seoTitle[lang], t.projects.seoDesc[lang]);
 
   const displayedProjects = showAll ? projects : projects.slice(0, 4);
 
   return (
-    <section id="projects" ref={ref} className="relative py-24 md:py-32 bg-[#060608] text-white transition-colors duration-300 w-full overflow-hidden">
+    <section id="projects" className="relative py-24 md:py-32 bg-[#060608] text-white transition-colors duration-300 w-full overflow-hidden">
       <InjectStyles />
 
       {/* Subtle grid background */}
@@ -289,6 +297,11 @@ const Projects: React.FC<ProjectsProps> = ({ showAll = false }) => {
               {t.projects.headline1[lang]}{' '}
               <span className="text-transparent bg-clip-text bg-gradient-to-r from-violet-400 to-purple-500">{t.projects.headline2[lang]}</span>
             </h2>
+            {showAll && (
+              <p className="mt-6 max-w-3xl text-base md:text-lg leading-relaxed text-white/60">
+                {t.projects.pageIntro[lang]}
+              </p>
+            )}
           </motion.div>
         </div>
 

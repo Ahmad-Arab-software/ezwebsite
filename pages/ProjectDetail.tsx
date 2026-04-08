@@ -3,6 +3,7 @@ import { useParams, Link, useNavigate } from 'react-router-dom';
 import { motion } from 'framer-motion';
 import { ArrowLeft, ArrowUpRight } from 'lucide-react';
 import { projects } from '../data/projects';
+import { useSEO } from '../hooks/useSEO';
 import { useLanguage } from '../i18n/LanguageContext';
 
 const ProjectDetail: React.FC = () => {
@@ -10,6 +11,45 @@ const ProjectDetail: React.FC = () => {
   const navigate = useNavigate();
   const { lang, t } = useLanguage();
   const project = projects.find(p => p.title.toLowerCase().replace(/\s+/g, '-') === slug);
+  const projectIndex = project ? project.id - 1 : -1;
+  const localizedSummary = project && projectIndex >= 0
+    ? t.projectData[projectIndex]?.description[lang] ?? project.description
+    : '';
+  const localizedDesc = project && projectIndex >= 0
+    ? t.projectData[projectIndex]?.longDescription[lang] ?? project.longDescription
+    : '';
+  const localizedHighlights = project && projectIndex >= 0
+    ? t.projectData[projectIndex]?.highlights[lang] ?? project.highlights
+    : [];
+
+  useSEO({
+    title: project
+      ? `${project.title} | ${project.category} portfolio van ezwebsite`
+      : 'Project niet gevonden | ezwebsite',
+    description: project
+      ? `${localizedSummary} Bekijk hoe ezwebsite dit ${project.contextType === 'client' ? 'klantproject' : 'eigen concept'} heeft ontworpen en gebouwd.`
+      : 'Het opgevraagde project bestaat niet in het portfolio van ezwebsite.',
+    path: project ? `/project/${slug}` : '/projecten',
+    image: project?.images?.[0] || project?.image,
+    structuredData: project
+      ? {
+          '@context': 'https://schema.org',
+          '@type': 'CreativeWork',
+          name: project.title,
+          description: localizedDesc,
+          image: project.images?.[0] || project.image,
+          url: `https://www.ezwebsite.nl/project/${slug}`,
+          dateCreated: `${project.year}-01-01`,
+          creator: {
+            '@type': 'Organization',
+            name: 'ezwebsite',
+            url: 'https://www.ezwebsite.nl/',
+          },
+          keywords: project.tags.join(', '),
+          genre: project.category,
+        }
+      : undefined,
+  });
 
   if (!project) {
     return (
@@ -20,13 +60,15 @@ const ProjectDetail: React.FC = () => {
     );
   }
 
-  const projectIndex = project.id - 1;
-  const localizedDesc = t.projectData[projectIndex]?.longDescription[lang] ?? project.longDescription;
-  const localizedHighlights = t.projectData[projectIndex]?.highlights[lang] ?? project.highlights;
-
   const images = project.images?.length ? project.images : [project.image];
   const prevProject = projects[(project.id - 2 + projects.length) % projects.length];
   const nextProject = projects[project.id % projects.length];
+  const contextLabel = project.contextType === 'client'
+    ? t.projectDetail.clientProject[lang]
+    : t.projectDetail.inHouseConcept[lang];
+  const contextNote = project.contextType === 'client'
+    ? t.projectDetail.clientProjectNote[lang]
+    : t.projectDetail.inHouseConceptNote[lang];
 
   return (
     <motion.div
@@ -59,6 +101,9 @@ const ProjectDetail: React.FC = () => {
               <span className="px-3 py-1 rounded-full bg-violet-600/10 border border-violet-600/30 text-[9px] font-bold uppercase tracking-[0.3em] text-violet-500">
                 {project.category}
               </span>
+              <span className="px-3 py-1 rounded-full bg-slate-100 border border-slate-200 text-[9px] font-bold uppercase tracking-[0.3em] text-slate-500">
+                {contextLabel}
+              </span>
               <span className="text-slate-400 text-xs font-bold tracking-widest">{project.year}</span>
             </div>
 
@@ -80,6 +125,15 @@ const ProjectDetail: React.FC = () => {
                   {tag}
                 </span>
               ))}
+            </div>
+
+            <div className="rounded-3xl border border-slate-200 bg-slate-50 p-6 md:p-8 mb-12 max-w-3xl">
+              <span className="text-[10px] font-bold uppercase tracking-[0.35em] text-violet-600 block mb-3">
+                {t.projectDetail.contextTitle[lang]}
+              </span>
+              <p className="text-slate-600 leading-relaxed text-sm md:text-base">
+                {contextNote}
+              </p>
             </div>
           </div>
 

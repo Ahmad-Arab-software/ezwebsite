@@ -16,8 +16,8 @@ export const translations = {
     headline1: { nl: 'DIGITALE', en: 'DIGITAL' },
     headline2: { nl: 'IMPACT.', en: 'IMPACT.' },
     subtext: {
-      nl: 'Je website is je digitale visitekaartje. Wij transformeren jouw visie naar een ervaring die',
-      en: 'Your website is your digital business card. We transform your vision into an experience that',
+      nl: 'Website laten maken of je huidige site vernieuwen? Wij ontwerpen en bouwen digitale ervaringen die',
+      en: 'Need a new website or a smart redesign? We design and build digital experiences that',
     },
     subtextBold: { nl: 'blijft hangen', en: 'sticks' },
     viewWork: { nl: 'Bekijk Werk', en: 'View Work' },
@@ -26,10 +26,10 @@ export const translations = {
       custom: { nl: 'Maatwerk', en: 'Custom' },
       creatives: { nl: 'Creatievelingen', en: 'Creatives' },
     },
-    seoTitle: { nl: 'ezwebsite | Next Level Web Design', en: 'ezwebsite | Next Level Web Design' },
+    seoTitle: { nl: 'ezwebsite | Website laten maken, webdesign & development', en: 'ezwebsite | Web design, websites & digital development' },
     seoDesc: {
-      nl: 'Wij transformeren jouw visie naar een digitale ervaring die de concurrentie doet verbleken.',
-      en: 'We transform your vision into a digital experience that outshines the competition.',
+      nl: 'Website laten maken? ezwebsite ontwerpt en bouwt moderne websites, redesigns en web apps voor ondernemers die online sterk willen groeien.',
+      en: 'Need a new website or redesign? ezwebsite designs and builds modern websites, redesigns and web apps for businesses that want to grow online.',
     },
   },
 
@@ -163,10 +163,14 @@ export const translations = {
     headline1: { nl: 'Onze', en: 'Our' },
     headline2: { nl: 'Projecten.', en: 'Projects.' },
     viewAll: { nl: 'Bekijk Alle Projecten', en: 'View All Projects' },
-    seoTitle: { nl: 'Projecten | Geselecteerde Werken', en: 'Projects | Selected Works' },
+    pageIntro: {
+      nl: 'Bekijk een selectie van websites en web apps die we hebben ontworpen en gebouwd. Je ziet hier zowel klantprojecten als eigen concepten, zodat je een eerlijk beeld krijgt van onze stijl, aanpak en technische focus.',
+      en: 'Explore a selection of websites and web apps we designed and built. You will see both client work and in-house concepts, so you get an honest picture of our style, process and technical focus.',
+    },
+    seoTitle: { nl: 'Projecten | Websites, redesigns en web apps van ezwebsite', en: 'Projects | Websites, redesigns and web apps by ezwebsite' },
     seoDesc: {
-      nl: 'Onze meest recente meesterwerken in webdesign en development.',
-      en: 'Our most recent masterpieces in web design and development.',
+      nl: 'Bekijk websites, redesigns en web apps uit het portfolio van ezwebsite — van klantprojecten tot eigen concepten.',
+      en: 'Explore websites, redesigns and web apps from the ezwebsite portfolio — from client work to in-house concepts.',
     },
   },
 
@@ -251,6 +255,17 @@ export const translations = {
     notFound: { nl: 'Project niet gevonden', en: 'Project not found' },
     backHome: { nl: 'Terug naar home', en: 'Back to home' },
     back: { nl: 'Terug', en: 'Back' },
+    contextTitle: { nl: 'Projectcontext', en: 'Project context' },
+    clientProject: { nl: 'Klantproject', en: 'Client project' },
+    inHouseConcept: { nl: 'Eigen concept', en: 'In-house concept' },
+    clientProjectNote: {
+      nl: 'Dit project is onderdeel van ons klantportfolio en laat zien hoe we bedrijven online duidelijker, sterker en gebruiksvriendelijker presenteren.',
+      en: 'This project is part of our client portfolio and shows how we present businesses online in a clearer, stronger and more user-friendly way.',
+    },
+    inHouseConceptNote: {
+      nl: 'Dit is een eigen concept in ons portfolio waarmee we laten zien hoe wij design, interactie en development aanpakken voor digitale producten.',
+      en: 'This is an in-house concept in our portfolio that shows how we approach design, interaction and development for digital products.',
+    },
     highlights: { nl: 'Hoogtepunten', en: 'Highlights' },
     viewSite: { nl: 'Bekijk site', en: 'View site' },
     contactUs: { nl: 'Neem contact op', en: 'Get in touch' },
@@ -287,23 +302,23 @@ export const translations = {
     },
     {
       description: {
-        nl: 'Streaming-geïnspireerd platform voor films en series.',
-        en: 'Streaming-inspired platform for movies and series.',
+        nl: 'Eigen streaming-geïnspireerd platformconcept voor films en series.',
+        en: 'In-house streaming-inspired platform concept for movies and series.',
       },
       longDescription: {
-        nl: 'AhmadFlex is een streaming-geïnspireerd platform waarmee bezoekers films en series kunnen ontdekken via spotlight-secties, horizontale rails, browse-pagina\'s en filterflows voor genres, jaren en talen. De interface is ontworpen om soepel te voelen op desktop, tablet en mobiel, met een focus op browse-ervaring en content-ritmes die aanvoelen als een echte streaming dienst.',
-        en: 'AhmadFlex is a streaming-inspired platform where visitors can discover movies and series through spotlight sections, horizontal rails, browse pages and filter flows for genres, years and languages. The interface is designed to feel smooth on desktop, tablet and mobile, with a focus on browse experience and content rhythms that feel like a real streaming service.',
+        nl: 'AhmadFlex is een eigen portfolio-concept waarmee we laten zien hoe we een streaming-geïnspireerde web app ontwerpen en bouwen. Bezoekers ontdekken films en series via spotlight-secties, horizontale rails, browse-pagina\'s en filterflows voor genres, jaren en talen. De interface is bewust ontworpen voor een soepele ervaring op desktop, tablet en mobiel.',
+        en: 'AhmadFlex is an in-house portfolio concept that shows how we design and build a streaming-inspired web app. Visitors discover movies and series through spotlight sections, horizontal rails, browse pages and filter flows for genres, years and languages. The interface is intentionally designed for a smooth experience on desktop, tablet and mobile.',
       },
       highlights: {
         nl: [
           'Netflix-achtige browse-ervaring met spotlight en rails',
           'Filter op genre, jaar en taal',
-          'Responsive design voor desktop, tablet en mobiel',
+          'Portfolio-concept voor UI/UX, browse-flow en front-end uitwerking',
         ],
         en: [
           'Netflix-like browse experience with spotlight and rails',
           'Filter by genre, year and language',
-          'Responsive design for desktop, tablet and mobile',
+          'Portfolio concept for UI/UX, browse flow and front-end execution',
         ],
       },
     },
@@ -353,45 +368,45 @@ export const translations = {
     },
     {
       description: {
-        nl: 'Japanse ramen delivery-app met een unieke visuele stijl.',
-        en: 'Japanese ramen delivery app with a unique visual style.',
+        nl: 'Eigen Japans ramen delivery-concept met een unieke visuele stijl.',
+        en: 'In-house Japanese ramen delivery concept with a unique visual style.',
       },
       longDescription: {
-        nl: 'Yume Ramen is een moderne delivery experience voor een ramenconcept, gebouwd met React en Firebase. De flow voelt direct en app-achtig aan: inloggen als klant, gerechten ontdekken, toppings kiezen, afrekenen en de bestelling live volgen via Firestore-statusupdates. De visuele stijl en interacties zijn bewust sfeervol en duidelijk gehouden, zodat de landing, product customizer, cart en orderstatus samen één rustige maar karaktervolle ervaring vormen.',
-        en: 'Yume Ramen is a modern delivery experience for a ramen concept, built with React and Firebase. The flow feels direct and app-like: log in as a customer, discover dishes, choose toppings, checkout and track your order live via Firestore status updates. The visual style and interactions are deliberately atmospheric and clear, so that the landing, product customizer, cart and order status together form one calm yet characterful experience.',
+        nl: 'Yume Ramen is een eigen portfolio-concept voor een moderne ramen delivery experience, gebouwd met React en Firebase. De flow voelt direct en app-achtig aan: inloggen als klant, gerechten ontdekken, toppings kiezen, afrekenen en de bestelling live volgen via Firestore-statusupdates. Zo laten we zien hoe we branding, UX en full-stack interactie in één concept samenbrengen.',
+        en: 'Yume Ramen is an in-house portfolio concept for a modern ramen delivery experience, built with React and Firebase. The flow feels direct and app-like: log in as a customer, discover dishes, choose toppings, checkout and track your order live via Firestore status updates. It shows how we combine branding, UX and full-stack interaction in one concept.',
       },
       highlights: {
         nl: [
           'Realtime orderstatus via Firestore-statusupdates',
           'Rollen-systeem: klant, chef, bezorger en admin',
-          'Sfeervol Japans design met illustraties en animaties',
+          'Eigen concept voor branding, productflow en full-stack uitwerking',
         ],
         en: [
           'Real-time order status via Firestore updates',
           'Role system: customer, chef, delivery and admin',
-          'Atmospheric Japanese design with illustrations and animations',
+          'In-house concept for branding, product flow and full-stack execution',
         ],
       },
     },
     {
       description: {
-        nl: 'Workout tracker app voor trainingen en programma\'s.',
-        en: 'Workout tracker app for training and programs.',
+        nl: 'Eigen workout tracker concept voor trainingen en programma\'s.',
+        en: 'In-house workout tracker concept for training and programs.',
       },
       longDescription: {
-        nl: 'Split is een workout-app die trainingen, bodyweight en programma\'s in een strakke mobiele interface samenbrengt. De ervaring voelt direct en app-achtig aan: een snelle auth-flow, een dashboard voor de dag, duidelijke bottom navigation en schermen voor training, programma\'s en timers. Alles is ontworpen met een mobile-first aanpak voor een native app-gevoel.',
-        en: 'Split is a workout app that brings training, bodyweight and programs together in a sleek mobile interface. The experience feels direct and app-like: a fast auth flow, a daily dashboard, clear bottom navigation and screens for training, programs and timers. Everything is designed with a mobile-first approach for a native app feel.',
+        nl: 'Split is een eigen portfolio-concept voor een workout-app die trainingen, bodyweight en programma\'s in een strakke mobiele interface samenbrengt. De ervaring voelt direct en app-achtig aan: een snelle auth-flow, een dashboard voor de dag, duidelijke bottom navigation en schermen voor training, programma\'s en timers. Alles is ontworpen met een mobile-first aanpak voor een native app-gevoel.',
+        en: 'Split is an in-house portfolio concept for a workout app that brings training, bodyweight and programs together in a sleek mobile interface. The experience feels direct and app-like: a fast auth flow, a daily dashboard, clear bottom navigation and screens for training, programs and timers. Everything is designed with a mobile-first approach for a native app feel.',
       },
       highlights: {
         nl: [
           'Strakke mobile-first interface met native app-gevoel',
           'Trainingsschema\'s, timers en voortgangsoverzicht',
-          'Performance dashboard met streak- en volumetracking',
+          'Eigen concept voor mobile UX, flows en productstructuur',
         ],
         en: [
           'Sleek mobile-first interface with native app feel',
           'Training schedules, timers and progress overview',
-          'Performance dashboard with streak and volume tracking',
+          'In-house concept for mobile UX, flows and product structure',
         ],
       },
     },

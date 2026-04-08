@@ -1,7 +1,6 @@
-import React, { useRef, useState } from 'react';
+import React, { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { Mail, Phone, Send, CheckCircle, Loader2 } from 'lucide-react';
-import { useSEO } from '../hooks/useSEO';
 import { useLanguage } from '../i18n/LanguageContext';
 
 // Modern styling for inputs - Updated for better light mode contrast
@@ -33,7 +32,6 @@ const StyledInput = ({ label, type = "text", placeholder, value, onChange, requi
 );
 
 const Contact: React.FC = () => {
-  const ref = useRef<HTMLElement>(null);
   const [formState, setFormState] = useState<'idle' | 'submitting' | 'success'>('idle');
   const { lang, t } = useLanguage();
 
@@ -45,9 +43,6 @@ const Contact: React.FC = () => {
       budget: '',
       message: ''
   });
-
-  useSEO(ref, t.contact.seoTitle[lang], t.contact.seoDesc[lang]);
-
   const handleSubmit = async (e: React.FormEvent) => {
       e.preventDefault();
       setFormState('submitting');
@@ -86,7 +81,7 @@ const Contact: React.FC = () => {
   };
 
   return (
-    <section id="contact" ref={ref} className="py-24 bg-slate-50 text-slate-900 relative overflow-hidden transition-colors duration-300 w-full">
+    <section id="contact" className="py-24 bg-slate-50 text-slate-900 relative overflow-hidden transition-colors duration-300 w-full">
       {/* Background Glow - Contained within overflow-hidden section */}
       <div className="absolute top-1/2 right-0 w-[300px] md:w-[600px] h-[300px] md:h-[600px] bg-violet-900/5 blur-[80px] md:blur-[150px] pointer-events-none rounded-full transform -translate-y-1/2 translate-x-1/2" />
 

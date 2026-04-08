@@ -1,17 +1,13 @@
-import React, { useRef, useState } from 'react';
+import React, { useState } from 'react';
 import { motion } from 'framer-motion';
-import { useSEO } from '../hooks/useSEO';
 import { useLanguage } from '../i18n/LanguageContext';
 
 const About: React.FC = () => {
-  const ref = useRef<HTMLElement>(null);
   const [storyExpanded, setStoryExpanded] = useState(false);
   const { lang, t } = useLanguage();
 
-  useSEO(ref, t.about.seoTitle[lang], t.about.seoDesc[lang]);
-
   return (
-    <section id="about" ref={ref} className="py-24 md:py-32 bg-white text-slate-900 overflow-hidden">
+    <section id="about" className="py-24 md:py-32 bg-white text-slate-900 overflow-hidden">
       <div className="container mx-auto px-4 md:px-6">
 
         {/* Top: big statement */}

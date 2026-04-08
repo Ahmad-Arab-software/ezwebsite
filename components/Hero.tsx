@@ -1,6 +1,5 @@
 import React, { useRef } from 'react';
 import { motion, useScroll, useTransform, useSpring } from 'framer-motion';
-import { useSEO } from '../hooks/useSEO';
 import { Play, Sparkles } from 'lucide-react';
 import { useLanguage } from '../i18n/LanguageContext';
 
@@ -16,8 +15,6 @@ const Hero: React.FC = () => {
   const yText = useTransform(smoothProgress, [0, 1], [0, 200]);
   const opacity = useTransform(smoothProgress, [0, 0.5], [1, 0]);
   const scale = useTransform(smoothProgress, [0, 0.5], [1, 0.9]);
-
-  useSEO(ref, t.hero.seoTitle[lang], t.hero.seoDesc[lang]);
 
   const handleScroll = (e: React.MouseEvent<HTMLAnchorElement>, href: string) => {
     e.preventDefault();

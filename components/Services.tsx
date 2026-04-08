@@ -1,7 +1,6 @@
-import React, { useRef } from 'react';
+import React from 'react';
 import { motion } from 'framer-motion';
 import { Zap, RefreshCw, Clock, Smartphone } from 'lucide-react';
-import { useSEO } from '../hooks/useSEO';
 import { useLanguage } from '../i18n/LanguageContext';
 
 const icons = [<RefreshCw />, <Clock />, <Zap />, <Smartphone />];
@@ -14,13 +13,10 @@ const gradients = [
 const sizes = ["md:col-span-7", "md:col-span-5", "md:col-span-5", "md:col-span-7"];
 
 const Services: React.FC = () => {
-  const ref = useRef<HTMLElement>(null);
   const { lang, t } = useLanguage();
 
-  useSEO(ref, t.services.seoTitle[lang], t.services.seoDesc[lang]);
-
   return (
-    <section id="services" ref={ref} className="py-24 md:py-32 bg-slate-50 text-slate-900 overflow-hidden">
+    <section id="services" className="py-24 md:py-32 bg-slate-50 text-slate-900 overflow-hidden">
       <div className="container mx-auto px-4 md:px-6">
 
         {/* Header */}

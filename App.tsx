@@ -30,24 +30,36 @@ import CursorEffects from './components/CursorEffects';
 import ScrollToTop from './components/ScrollToTop';
 import ProjectDetail from './pages/ProjectDetail';
 import ProjectsPage from './pages/ProjectsPage';
+import { useSEO } from './hooks/useSEO';
+import { useLanguage } from './i18n/LanguageContext';
 
-const HomePage: React.FC = () => (
-  <div className="antialiased selection:bg-violet-500 selection:text-white font-sans bg-white text-slate-900">
-    <CursorEffects />
-    <Navbar />
-    <main>
-      <Hero />
-      <LogoCloud />
-      <About />
-      <Services />
-      <Process />
-      <Projects />
-      <Contact />
-    </main>
-    <Footer />
-    <ScrollToTop />
-  </div>
-);
+const HomePage: React.FC = () => {
+  const { lang, t } = useLanguage();
+
+  useSEO({
+    title: t.hero.seoTitle[lang],
+    description: t.hero.seoDesc[lang],
+    path: '/',
+  });
+
+  return (
+    <div className="antialiased selection:bg-violet-500 selection:text-white font-sans bg-white text-slate-900">
+      <CursorEffects />
+      <Navbar />
+      <main>
+        <Hero />
+        <LogoCloud />
+        <About />
+        <Services />
+        <Process />
+        <Projects />
+        <Contact />
+      </main>
+      <Footer />
+      <ScrollToTop />
+    </div>
+  );
+};
 
 const App: React.FC = () => {
   return (

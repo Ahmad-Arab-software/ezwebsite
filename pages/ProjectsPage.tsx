@@ -14,6 +14,7 @@ const ProjectsPage: React.FC = () => {
     title: t.projects.seoTitle[lang],
     description: t.projects.seoDesc[lang],
     path: '/projecten',
+    lang,
   });
 
   return (

@@ -40,6 +40,7 @@ const HomePage: React.FC = () => {
     title: t.hero.seoTitle[lang],
     description: t.hero.seoDesc[lang],
     path: '/',
+    lang,
   });
 
   return (

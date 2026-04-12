@@ -59,8 +59,8 @@ const About: React.FC = () => {
             className="md:col-span-4 bg-slate-950 text-white rounded-3xl p-8 md:p-10 flex flex-col justify-between"
           >
             <div>
-              <div className="w-12 h-12 rounded-2xl bg-violet-600 flex items-center justify-center mb-6">
-                <span className="font-display font-bold text-lg">ez</span>
+              <div className="w-12 h-12 rounded-2xl flex items-center justify-center mb-6">
+                <img src="/favicon.svg" alt="ezwebsite logo" className="w-12 h-12" />
               </div>
               <h3 className="font-display font-bold text-2xl md:text-3xl uppercase mb-4 leading-tight">
                 {t.about.storyTitle[lang]}

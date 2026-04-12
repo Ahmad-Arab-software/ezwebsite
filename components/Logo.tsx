@@ -21,24 +21,10 @@ const Logo: React.FC<LogoProps> = ({ className = "", light = false }) => {
                 transition: { type: "spring", stiffness: 300, damping: 20 }
             }}
         >
-            {/* Background with Gradient */}
-            <div className="absolute inset-0 bg-gradient-to-br from-violet-600 to-violet-800 rounded-lg shadow-lg border border-white/10 overflow-hidden">
-                {/* Shimmer Effect */}
-                <motion.div 
-                    className="absolute inset-0 bg-gradient-to-r from-transparent via-white/40 to-transparent skew-x-12"
-                    initial={{ x: "-150%" }}
-                    whileHover={{ x: "150%" }}
-                    transition={{ duration: 0.8, ease: "easeInOut" }}
-                />
-                
-                {/* SVG Icon */}
-                <div className="absolute inset-0 flex items-center justify-center">
-                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" className="text-white drop-shadow-md">
-                        <path d="M4 7H20M4 7L16 17H4L16 17V17" stroke="currentColor" strokeWidth="3" strokeLinecap="square" strokeLinejoin="miter"/>
-                        <path d="M20 7L8 17" stroke="currentColor" strokeWidth="3" strokeLinecap="square"/>
-                    </svg>
-                </div>
-            </div>
+            {/* Logo SVG */}
+            <img src="/favicon.svg" alt="" className="absolute inset-0 w-full h-full rounded-lg" />
+            {/* Shimmer Effect */}
+       
             
             {/* Glow behind */}
             <div className="absolute inset-0 bg-violet-500 blur-xl opacity-0 group-hover:opacity-40 transition-opacity duration-300 -z-10 transform translate-z-[-10px]"></div>

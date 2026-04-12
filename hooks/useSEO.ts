@@ -12,6 +12,7 @@ interface SEOOptions {
   path?: string;
   image?: string;
   type?: string;
+  lang?: 'nl' | 'en';
   structuredData?: StructuredData;
 }
 
@@ -51,6 +52,7 @@ export const useSEO = ({
   path,
   image = DEFAULT_IMAGE,
   type = 'website',
+  lang,
   structuredData,
 }: SEOOptions) => {
   const location = useLocation();
@@ -60,8 +62,11 @@ export const useSEO = ({
     const resolvedPath = path ?? `${location.pathname}${location.search}`;
     const absoluteUrl = new URL(resolvedPath, SITE_URL).toString();
     const absoluteImage = new URL(image, SITE_URL).toString();
+    const locale = lang === 'en' ? 'en_GB' : 'nl_NL';
+    const altLocale = lang === 'en' ? 'nl_NL' : 'en_GB';
 
     document.title = title;
+    if (lang) document.documentElement.lang = lang;
 
     upsertMeta('name', 'description', description);
     upsertMeta('name', 'robots', 'index,follow');
@@ -72,6 +77,8 @@ export const useSEO = ({
     upsertMeta('property', 'og:url', absoluteUrl);
     upsertMeta('property', 'og:image', absoluteImage);
     upsertMeta('property', 'og:image:alt', `${title} preview`);
+    upsertMeta('property', 'og:locale', locale);
+    upsertMeta('property', 'og:locale:alternate', altLocale);
     upsertMeta('name', 'twitter:card', 'summary_large_image');
     upsertMeta('name', 'twitter:title', title);
     upsertMeta('name', 'twitter:description', description);

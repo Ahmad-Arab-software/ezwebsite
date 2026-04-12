@@ -111,7 +111,7 @@ const Contact: React.FC = () => {
                 </div>
               </a>
 
-              <a href="https://wa.me/31684854767" target="_blank" rel="noopener noreferrer" className="flex items-center space-x-6 group cursor-pointer w-fit max-w-full">
+              <a href="https://wa.me/31626404047?text=Hoi%21%20Mijn%20huidige%20website%20is%20wel%20toe%20aan%20een%20opfrisbeurt.%20Kan%20ik%20daarvoor%20bij%20jullie%20terecht%3F" target="_blank" rel="noopener noreferrer" className="flex items-center space-x-6 group cursor-pointer w-fit max-w-full">
                 <motion.div
                   whileHover={{ rotate: 15, scale: 1.1 }}
                   className="flex-shrink-0 w-12 h-12 md:w-14 md:h-14 rounded-full bg-white border border-slate-200 flex items-center justify-center text-slate-900 group-hover:bg-violet-600 group-hover:text-white group-hover:border-violet-600 transition-all duration-300 shadow-md"
@@ -120,7 +120,7 @@ const Contact: React.FC = () => {
                 </motion.div>
                 <div className="overflow-hidden">
                   <p className="text-xs font-bold text-slate-500 uppercase tracking-widest mb-1">{lang === 'nl' ? 'Telefoon' : 'Phone'}</p>
-                  <p className="font-display font-bold text-lg md:text-2xl group-hover:text-violet-500 transition-colors truncate">06 848 547 67</p>
+                  <p className="font-display font-bold text-lg md:text-2xl group-hover:text-violet-500 transition-colors truncate">06 264 040 47</p>
                 </div>
               </a>
 
@@ -199,7 +199,7 @@ const Contact: React.FC = () => {
                         <StyledInput
                             label={t.contact.emailFieldLabel[lang]}
                             type="email"
-                            placeholder="john@example.com"
+                            placeholder="Zakelijk e-mailadres / Business email..."
                             value={formData.email}
                             onChange={(e: any) => handleChange('email', e.target.value)}
                             required

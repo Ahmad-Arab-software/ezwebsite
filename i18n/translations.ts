@@ -26,10 +26,10 @@ export const translations = {
       custom: { nl: 'Maatwerk', en: 'Custom' },
       creatives: { nl: 'Creatievelingen', en: 'Creatives' },
     },
-    seoTitle: { nl: 'ezwebsite | Website laten maken, webdesign & development', en: 'ezwebsite | Web design, websites & digital development' },
+    seoTitle: { nl: 'ezwebsite | Website laten maken in Nederland — Webdesign & Development', en: 'ezwebsite | Web Design & Website Redesign in the Netherlands' },
     seoDesc: {
-      nl: 'Website laten maken? ezwebsite ontwerpt en bouwt moderne websites, redesigns en web apps voor ondernemers die online sterk willen groeien.',
-      en: 'Need a new website or redesign? ezwebsite designs and builds modern websites, redesigns and web apps for businesses that want to grow online.',
+      nl: 'Website laten maken of je huidige site vernieuwen? ezwebsite ontwerpt en bouwt maatwerk websites, website redesigns en web apps voor ondernemers in Nederland.',
+      en: 'Need a new website or a website redesign? ezwebsite designs and builds custom websites, redesigns and web apps for businesses in the Netherlands.',
     },
   },
 
@@ -187,7 +187,7 @@ export const translations = {
     online: { nl: 'Online', en: 'Online' },
     messageSent: { nl: 'Bericht verstuurd', en: 'Message sent' },
     nameLabel: { nl: 'Naam', en: 'Name' },
-    namePlaceholder: { nl: 'John Doe', en: 'John Doe' },
+    namePlaceholder: { nl: 'Je naam', en: 'Your name' },
     companyLabel: { nl: 'Bedrijf', en: 'Company' },
     companyPlaceholder: { nl: 'Jouw Bedrijf', en: 'Your Company' },
     emailFieldLabel: { nl: 'Email', en: 'Email' },

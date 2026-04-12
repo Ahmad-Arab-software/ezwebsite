@@ -60,6 +60,7 @@ const Navbar: React.FC = () => {
     { name: t.nav.home[lang], href: '#' },
     { name: t.nav.about[lang], href: '#about' },
     { name: t.nav.services[lang], href: '#services' },
+    { name: t.nav.faq[lang], href: '#faq' },
     { name: t.nav.projects[lang], href: '/projecten' },
   ];
 

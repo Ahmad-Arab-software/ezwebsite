@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 700 130" width="700" height="130">
+  <defs>
+    <linearGradient id="iconGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#8B5CF6"/>
+      <stop offset="100%" stop-color="#5B21B6"/>
+    </linearGradient>
+  </defs>
+
+  <!-- ═══════════════════════════════════════════════ -->
+  <!-- ICON: purple rounded square                     -->
+  <!-- ═══════════════════════════════════════════════ -->
+  <rect x="5" y="5" width="120" height="120" rx="22" ry="22" fill="url(#iconGrad)"/>
+
+  <!-- EZ lettermark (white geometric paths) -->
+  <!-- Top horizontal bar -->
+  <rect x="35" y="35" width="60" height="10" fill="white"/>
+  <!-- Left vertical bar (E) -->
+  <rect x="35" y="35" width="10" height="60" fill="white"/>
+  <!-- Middle horizontal bar (E) -->
+  <rect x="35" y="60" width="42" height="9" fill="white"/>
+  <!-- Bottom horizontal bar -->
+  <rect x="35" y="85" width="60" height="10" fill="white"/>
+  <!-- Z diagonal stripe -->
+  <polygon points="85,45 95,45 45,85 35,85" fill="white"/>
+
+  <!-- ═══════════════════════════════════════════════ -->
+  <!-- WORDMARK: EZ (black) + WEBSITE (purple)         -->
+  <!-- TIP Illustrator: Type > Create Outlines         -->
+  <!-- ═══════════════════════════════════════════════ -->
+  <text x="145" y="97"
+        font-family="'Arial Black', Gadget, sans-serif"
+        font-weight="900"
+        font-size="82">
+    <tspan fill="#111111">EZ</tspan><tspan fill="#7C3AED">WEBSITE</tspan>
+  </text>
+</svg>

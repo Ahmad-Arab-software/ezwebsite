@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import { Mail, Phone, Send, CheckCircle, Loader2 } from 'lucide-react';
+import { Mail, Phone, MapPin, Send, CheckCircle, Loader2 } from 'lucide-react';
 import { useLanguage } from '../i18n/LanguageContext';
 
 // Modern styling for inputs - Updated for better light mode contrast
@@ -123,6 +123,17 @@ const Contact: React.FC = () => {
                   <p className="font-display font-bold text-lg md:text-2xl group-hover:text-violet-500 transition-colors truncate">06 264 040 47</p>
                 </div>
               </a>
+
+              <div className="flex items-center space-x-6 w-fit max-w-full">
+                <div className="flex-shrink-0 w-12 h-12 md:w-14 md:h-14 rounded-full bg-white border border-slate-200 flex items-center justify-center text-slate-900 shadow-md">
+                  <MapPin className="w-5 h-5" />
+                </div>
+                <div>
+                  <p className="text-xs font-bold text-slate-500 uppercase tracking-widest mb-1">{lang === 'nl' ? 'Werkgebied' : 'Service Area'}</p>
+                  <p className="font-display font-bold text-lg md:text-2xl">Rotterdam, Zuid-Holland</p>
+                  <p className="text-slate-400 text-sm mt-0.5">{lang === 'nl' ? 'Actief door heel Nederland' : 'Active throughout the Netherlands'}</p>
+                </div>
+              </div>
 
             </div>
           </div>

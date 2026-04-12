@@ -30,6 +30,7 @@ import CursorEffects from './components/CursorEffects';
 import ScrollToTop from './components/ScrollToTop';
 import ProjectDetail from './pages/ProjectDetail';
 import ProjectsPage from './pages/ProjectsPage';
+import FAQ from './components/FAQ';
 import { useSEO } from './hooks/useSEO';
 import { useLanguage } from './i18n/LanguageContext';
 
@@ -52,6 +53,7 @@ const HomePage: React.FC = () => {
         <LogoCloud />
         <About />
         <Services />
+        <FAQ />
         <Process />
         <Projects />
         <Contact />

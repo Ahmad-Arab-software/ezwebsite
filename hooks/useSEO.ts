@@ -2,7 +2,7 @@ import { useEffect } from 'react';
 import { useLocation } from 'react-router-dom';
 
 const SITE_URL = 'https://www.ezwebsite.nl';
-const DEFAULT_IMAGE = '/images/mockups/ytech-mockup.png';
+const DEFAULT_IMAGE = '/og-image.png';
 
 type StructuredData = Record<string, unknown> | Array<Record<string, unknown>>;
 

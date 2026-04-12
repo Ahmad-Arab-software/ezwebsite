@@ -7,6 +7,7 @@ export const translations = {
     about: { nl: 'Over Ons', en: 'About Us' },
     services: { nl: 'Diensten', en: 'Services' },
     projects: { nl: 'Projecten', en: 'Projects' },
+    faq: { nl: 'FAQ', en: 'FAQ' },
     startProject: { nl: 'Start Project', en: 'Start Project' },
   },
 
@@ -26,10 +27,10 @@ export const translations = {
       custom: { nl: 'Maatwerk', en: 'Custom' },
       creatives: { nl: 'Creatievelingen', en: 'Creatives' },
     },
-    seoTitle: { nl: 'ezwebsite | Website laten maken in Nederland — Webdesign & Development', en: 'ezwebsite | Web Design & Website Redesign in the Netherlands' },
+    seoTitle: { nl: 'ezwebsite | Website laten maken & bouwen — Webdesign Rotterdam', en: 'ezwebsite | Web Design & Website Development — Rotterdam' },
     seoDesc: {
-      nl: 'Website laten maken of je huidige site vernieuwen? ezwebsite ontwerpt en bouwt maatwerk websites, website redesigns en web apps voor ondernemers in Nederland.',
-      en: 'Need a new website or a website redesign? ezwebsite designs and builds custom websites, redesigns and web apps for businesses in the Netherlands.',
+      nl: 'Website laten maken of bouwen in Rotterdam? ezwebsite ontwerpt en bouwt maatwerk websites, website redesigns en web apps voor ondernemers die online willen groeien.',
+      en: 'Looking to get a website built? ezwebsite is a web design agency based in Rotterdam that creates custom websites, redesigns and web apps for growing businesses.',
     },
   },
 
@@ -152,6 +153,41 @@ export const translations = {
         description: {
           nl: 'We lanceren je site en zorgen dat alles perfect werkt. Daarna staan we 24/7 klaar voor support.',
           en: 'We launch your site and make sure everything works perfectly. After that we\'re available 24/7 for support.',
+        },
+      },
+    ],
+  },
+
+  // FAQ
+  faq: {
+    label: { nl: 'Veelgestelde Vragen', en: 'Frequently Asked Questions' },
+    headline1: { nl: 'Alles wat je', en: 'Everything you' },
+    headline2: { nl: 'Wilt Weten.', en: 'Want to Know.' },
+    priceLabel: { nl: 'Startprijs website', en: 'Starting price' },
+    priceDesc: {
+      nl: 'Al vanaf €600 bouwen wij een professionele maatwerk website voor jouw onderneming.',
+      en: 'From €600 we build a professional custom website for your business.',
+    },
+    items: [
+      {
+        question: { nl: 'Hoeveel kost een website laten maken?', en: 'How much does it cost to get a website built?' },
+        answer: {
+          nl: 'Onze websites starten vanaf €600. De exacte prijs is afhankelijk van de omvang, het design en de gewenste functionaliteiten van het project. Neem vrijblijvend contact op voor een offerte op maat.',
+          en: 'Our websites start from €600. The exact price depends on the scope, design and desired features of the project. Contact us for a custom quote with no obligations.',
+        },
+      },
+      {
+        question: { nl: 'Hoe lang duurt het om een website te laten maken?', en: 'How long does it take to build a website?' },
+        answer: {
+          nl: 'De meeste projecten leveren wij op binnen 2 tot 3 weken. De exacte doorlooptijd is afhankelijk van de complexiteit van het project en de snelheid waarmee we feedback ontvangen. We houden je gedurende het hele proces op de hoogte.',
+          en: 'Most projects are delivered within 2 to 3 weeks. The exact timeline depends on the complexity and how quickly we receive feedback. We keep you updated throughout the entire process.',
+        },
+      },
+      {
+        question: { nl: 'Bieden jullie ook webhosting aan?', en: 'Do you also offer web hosting?' },
+        answer: {
+          nl: 'Ja, wij bieden ook hostingoplossingen aan. Heb je al een eigen hostingprovider? Dan deployen wij je website daar. Heb je nog geen hosting? Geen probleem — wij regelen dat voor je.',
+          en: 'Yes, we offer hosting solutions as well. Already have a hosting provider? We will deploy your website there. No hosting yet? No problem — we will arrange it for you.',
         },
       },
     ],

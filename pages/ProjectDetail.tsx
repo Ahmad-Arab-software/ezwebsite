@@ -31,6 +31,7 @@ const ProjectDetail: React.FC = () => {
       : 'Het opgevraagde project bestaat niet in het portfolio van ezwebsite.',
     path: project ? `/project/${slug}` : '/projecten',
     image: project?.images?.[0] || project?.image,
+    lang,
     structuredData: project
       ? {
           '@context': 'https://schema.org',

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  EZWebsite Icon  –  512 × 512
+  ──────────────────────────────────────────────────────────
+  • Pure vector (no embedded bitmaps) → fully scalable
+  • Open in Adobe Illustrator, Inkscape, or any SVG editor
+  • For PNG export: File > Export > Export As... (PNG, 512 px)
+  • Use as WhatsApp / Google profile picture at 512 × 512 px
+  ──────────────────────────────────────────────────────────
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512">
+  <defs>
+    <linearGradient id="iconBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#8B5CF6"/>
+      <stop offset="100%" stop-color="#5B21B6"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Background: purple gradient rounded square -->
+  <rect width="512" height="512" rx="88" ry="88" fill="url(#iconBg)"/>
+
+  <!-- ═══════════════════════════════════════════════════════ -->
+  <!-- EZ lettermark — all white, centered 256×256            -->
+  <!-- Mark spans x: 128–384  ·  y: 128–384                   -->
+  <!-- Bar thickness: 43 px  (≈ 16.8% of mark width)          -->
+  <!-- ═══════════════════════════════════════════════════════ -->
+
+  <!-- Top horizontal bar -->
+  <rect x="128" y="128" width="256" height="43" fill="white"/>
+
+  <!-- Left vertical bar (forms the E) -->
+  <rect x="128" y="128" width="43"  height="256" fill="white"/>
+
+  <!-- Middle horizontal bar (E, slightly shorter) -->
+  <rect x="128" y="237" width="182" height="38"  fill="white"/>
+
+  <!-- Bottom horizontal bar -->
+  <rect x="128" y="341" width="256" height="43"  fill="white"/>
+
+  <!-- Z diagonal stripe: top-right → bottom-left -->
+  <polygon points="341,171 384,171 171,341 128,341" fill="white"/>
+</svg>

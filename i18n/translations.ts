@@ -312,7 +312,7 @@ export const translations = {
     nextProject: { nl: 'Volgend project', en: 'Next project' },
   },
 
-  // Project data — order must match data/projects.ts: YTech, AhmadFlex, Piccobello, King Airco, Yume Ramen, Split Workout
+  // Project data — order must match data/projects.ts: YTech, Piccobello, King Airco, Yume Ramen, Split Workout
   projectData: [
     {
       description: {
@@ -333,28 +333,6 @@ export const translations = {
           'Clear service pages per sector (residential, commercial, renovation)',
           'SEO-optimized for local and national visibility',
           'Mobile-friendly design aligned with YTech\'s yellow brand identity',
-        ],
-      },
-    },
-    {
-      description: {
-        nl: 'Eigen streaming-geïnspireerd platformconcept voor films en series.',
-        en: 'In-house streaming-inspired platform concept for movies and series.',
-      },
-      longDescription: {
-        nl: 'AhmadFlex is een eigen portfolio-concept waarmee we laten zien hoe we een streaming-geïnspireerde web app ontwerpen en bouwen. Bezoekers ontdekken films en series via spotlight-secties, horizontale rails, browse-pagina\'s en filterflows voor genres, jaren en talen. De interface is bewust ontworpen voor een soepele ervaring op desktop, tablet en mobiel.',
-        en: 'AhmadFlex is an in-house portfolio concept that shows how we design and build a streaming-inspired web app. Visitors discover movies and series through spotlight sections, horizontal rails, browse pages and filter flows for genres, years and languages. The interface is intentionally designed for a smooth experience on desktop, tablet and mobile.',
-      },
-      highlights: {
-        nl: [
-          'Netflix-achtige browse-ervaring met spotlight en rails',
-          'Filter op genre, jaar en taal',
-          'Portfolio-concept voor UI/UX, browse-flow en front-end uitwerking',
-        ],
-        en: [
-          'Netflix-like browse experience with spotlight and rails',
-          'Filter by genre, year and language',
-          'Portfolio concept for UI/UX, browse flow and front-end execution',
         ],
       },
     },

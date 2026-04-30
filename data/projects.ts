@@ -27,28 +27,6 @@ export const projects: Project[] = [
   },
   {
     id: 2,
-    title: "AhmadFlex",
-    category: "Web App",
-    contextType: 'concept',
-    image: "/images/ahmadflex/preview.png",
-    description: "Eigen streaming-geïnspireerd platformconcept voor films en series.",
-    year: "2025",
-    tags: ["React", "API Integration", "Responsive", "UI/UX"],
-    longDescription: "AhmadFlex is een eigen portfolio-concept waarmee we laten zien hoe we een streaming-geïnspireerde web app ontwerpen en bouwen. Bezoekers ontdekken films en series via spotlight-secties, horizontale rails, browse-pagina's en filterflows voor genres, jaren en talen. De interface is bewust ontworpen voor een soepele ervaring op desktop, tablet en mobiel.",
-    highlights: [
-      "Netflix-achtige browse-ervaring met spotlight en rails",
-      "Filter op genre, jaar en taal",
-      "Portfolio-concept voor UI/UX, browse-flow en front-end uitwerking"
-    ],
-    url: "https://ahmadflex-20260307.netlify.app/",
-    mockupImage: "/images/mockups/ahmadflex-mockup.png",
-    images: [
-      "/images/ahmadflex/preview.png",
-      "/images/ahmadflex/desktop.png",
-    ]
-  },
-  {
-    id: 3,
     title: "Piccobello",
     category: "Webdesign",
     contextType: 'client',
@@ -75,7 +53,7 @@ export const projects: Project[] = [
     ]
   },
   {
-    id: 4,
+    id: 3,
     title: "King Airco",
     category: "Webdesign",
     contextType: 'client',
@@ -98,7 +76,7 @@ export const projects: Project[] = [
     ]
   },
   {
-    id: 5,
+    id: 4,
     title: "Yume Ramen",
     category: "Web App",
     contextType: 'concept',
@@ -120,7 +98,7 @@ export const projects: Project[] = [
     ]
   },
   {
-    id: 6,
+    id: 5,
     title: "Split Workout",
     category: "Web App",
     contextType: 'concept',
